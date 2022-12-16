@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="./CSS/main.css">
   <link rel="stylesheet" href="./CSS/left-content.css">
   <link rel="stylesheet" href="./CSS/right-content.css">
+  <link rel="stylesheet" href="./CSS/content-1.css">
+  <link rel="stylesheet" href="./CSS/content-2.css">
+  <link rel="stylesheet" href="./CSS/content-3.css">
   <!-- LINKS DE CSS// -->
   
   <title>Frontend Mentor | Multi-step form</title>
@@ -29,16 +32,17 @@
   <main>
     <!-- LEFT-CONTENT -->
     <div class="content-left">
+     <div class="op1">
       <div class="op">
-       <div class="num activate">
-          <h2>1</h2>
-      </div>
-          <div class="infos">
-              <h3>STEP 1</h3>
-              <h2>YOUR INFO</h2>
-          </div>
-
-      </div>
+        <div class="num activate">
+           <h2>1</h2>
+       </div>
+           <div class="infos">
+               <h3>STEP 1</h3>
+               <h2>YOUR INFO</h2>
+           </div>
+       </div>
+     </div>
 
       <div class="op">
        <div class="num"><h2>2</h2></div>
@@ -74,22 +78,168 @@
     <div class="content-right">
       <!-- CONTENT 1 -->
       <div class="content-1">
+        <div class="content--1">
         
-        <h1>Personal info</h1>
-        <p class="subtitle"> Please provide your name, email address, and phone number.</p>
-        <label for="name">Name</label>
-        <input id="name" type="text">
-        <label for="email">Email Address</label>
-        <input id="email" type="text">
-        <label for="number">Phone Number</label>
-        <input id="number" type="text">
-
-      </div>
-      <div class="button">
-        <button>Next Step</button>
+          <h1>Personal info</h1>
+          <p class="subtitle"> Please provide your name, email address, and phone number.</p>
+          <label for="name">Name</label>
+          <input id="name" type="text">
+          <label for="email">Email Address</label>
+          <input id="email" type="text">
+          <label for="number">Phone Number</label>
+          <input id="number" type="text">
+  
+        </div>
+  
+        <div class="button">
+          <button id="next-button" onclick="navigation('.content-1','.content-2')">Next Step</button>
+        </div>
       </div>
       <!-- CONTENT 1// -->
+
+
+
+      <!-- CONTENT 2 -->
+      <div class="content-2">
+        <div class="content--2">
+        
+          <h1 class="title"> Select your plan</h1>
+          <p class="subtitle">You have the option of monthly or yearly billing.</p>
+           <!-- CARDS -->
+       <div class="cards">
+           
+            <div class="card">
+
+                  <img src="./assets/images/icon-arcade.svg" class="icon" alt="">
+
+                  <div>
+                    <h3>Arcade</h3>
+                    <p class="subtitle">$9/mo</p>
+                </div>
+
+            </div>  
+              <!-- ////////////////////////// -->
+           <div class="card">
+
+                <img src="./assets/images/icon-advanced.svg" class="icon" alt="">
+
+                <div>
+                  <h3>Advanced</h3>
+                  <p class="subtitle">$9/mo</p>
+              </div>
+
+           </div>  
+              <!-- ////////////////////////// -->
+
+           <div class="card">
+
+              <img src="./assets/images/icon-pro.svg" class="icon" alt="">
+
+              <div>
+                  <h3>Pro</h3>
+                  <p class="subtitle">$9/mo</p>
+              </div>
+
+          </div> 
+
+     </div>
+     <!-- CARDS// -->
+
+     <div class="payment">
+
+        <p>Mounth</p>
+
+        <div onclick="animatedToggle()" class="button-pay">
+          <div class="ball"></div>
+        </div>
+
+        <p>Early</p>
+
+     </div>
+
+     <div class="navigation">
+      <p id="goBack" onclick="navigation('.content-2','.content-1')">Go Back</p>
+      <button onclick="navigation('.content-2', '.content-3')">Next Step</button>
+     </div>
+
+      </div>
+    
     </div>
+      <!-- CONTENT 2// -->
+
+      <div class="content-3">
+        <div class="content--3">
+          <h1 class="title">Pick add-ons</h1>
+        <p class="subtitle"> Add-ons help enhance your gaming experience.</p>
+
+      <div class="check">
+
+            <div class="base">
+              <input type="checkbox" id="">
+
+            <div class="informations">
+              <h3>Online service</h3>
+              <p class="subtitle">Access to multiplayer games</p>
+            </div>
+            </div>
+
+            <div class="value">
+              <p>+$1/mo</p>
+            </div>
+
+      </div>
+
+      
+     <div class="check">
+
+            <div class="base">
+              <input type="checkbox" id="">
+
+            <div class="informations">
+              <h3>Online service</h3>
+              <p class="subtitle">Access to multiplayer games</p>
+            </div>
+            </div>
+
+            <div class="value">
+              <p>+$1/mo</p>
+            </div>
+          </div>
+
+    
+     <div class="check">
+
+            <div class="base">
+              <input type="checkbox" id="">
+  
+            <div class="informations">
+              <h3>Online service</h3>
+              <p class="subtitle">Access to multiplayer games</p>
+            </div>
+            </div>
+  
+            <div class="value">
+              <p>+$1/mo</p>
+            </div>
+          </div>
+
+          <div class="navigation">
+            <p id="goBack" onclick="navigation('.content-3','.content-2')">Go Back</p>
+            <button>Next Step</button>
+           </div>
+    </div>
+
+      </div>
+
+    </div>
+
+        
+        </div>
+
+
+        
+
+      </div>
     <!-- RIGHT CONTENT// -->
 
   </main>
@@ -201,5 +351,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
