@@ -65,22 +65,21 @@
     right: 0px;
 }
 
-.navigation{
-    margin-top: 12%;
+.navigation-3{
     display: flex;
     justify-content: space-between;
   }
   
-  .navigation p{
+  .navigation-3 p{
     cursor: pointer;
     color:  hsl(231, 11%, 63%);
   }
   
-  .navigation p:hover{
+  .navigation-3 p:hover{
     color: hsl(213, 96%, 18%);
   }
   
-  .navigation button{
+  .navigation-3 button{
     background-color:  hsl(243, 100%, 62%);
     color: white;
     border: none;

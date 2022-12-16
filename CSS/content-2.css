@@ -1,13 +1,15 @@
 .content-2{
   display: none;
+  height: 100%;
+  width: 100%;
 }
 
 .content--2{
     width: 80%;
+    height: 100%;
     margin: 3% auto;
     transition: 0.5s;
     display: block;
-    height: 100%;
   }
   
   .content--2 h1{
@@ -92,21 +94,44 @@
   left: calc(100% - 15px);
  }
 
-.navigation{
+.navigation-2{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 900px) and (max-width: 1000px){
+  .navigation-2{
+    margin-top: 18%;
+  }
 }
 
-.navigation p{
+@media (min-width: 1000px) and (max-width: 1200px){
+  .navigation-2{
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+  .navigation-2{
+    margin-top: 23%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1564px){
+  .navigation-2{
+    margin-top: 24%;
+  }
+}
+.navigation-2 p{
+
   cursor: pointer;
   color:  hsl(231, 11%, 63%);
 }
 
-.navigation p:hover{
+.navigation-2 p:hover{
   color: hsl(213, 96%, 18%);
 }
 
-.navigation button{
+.navigation-2 button{
   background-color:  hsl(243, 100%, 62%);
   color: white;
   border: none;
