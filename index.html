@@ -34,7 +34,7 @@
     <div class="content-left">
      <div class="op1">
       <div class="op">
-        <div class="num activate">
+        <div class="num activate" id="step1" >
            <h2>1</h2>
        </div>
            <div class="infos">
@@ -45,7 +45,9 @@
      </div>
 
       <div class="op">
-       <div class="num"><h2>2</h2></div>
+       <div class="num" id="step2">
+          <h2>2</h2>
+        </div>
           <div class="infos">
             <h3>STEP 2</h3>
             <h2>SELECT PLAN</h2>
@@ -88,12 +90,13 @@
           <input id="email" type="text">
           <label for="number">Phone Number</label>
           <input id="number" type="text">
+
+          <div class="button">
+            <button id="next-button" onclick="navigation('.content-1','.content-2')">Next Step</button>
+          </div>
   
         </div>
-  
-        <div class="button">
-          <button id="next-button" onclick="navigation('.content-1','.content-2')">Next Step</button>
-        </div>
+
       </div>
       <!-- CONTENT 1// -->
 

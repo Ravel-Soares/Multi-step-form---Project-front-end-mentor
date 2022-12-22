@@ -3,10 +3,11 @@
 }
 
  .content--3{
+    align-items: center;
     width: 80%;
-    margin: 3% auto;
-    transition: 0.5s;
+    margin: 5% auto;
     display: block;
+    transition: .5s;
  }
 
   .content--3 h1{
@@ -30,8 +31,8 @@
 
 .content--3 .check{
     margin: 10px 0;
-    width: 100%;
-    height: 10%;
+    max-width: 100%;
+    max-height: 5%;
     display: flex;
     flex-direction: row;
     border-radius: 5px;
@@ -57,7 +58,6 @@
 
 .content--3 p{
     font-size: 15px;
-    width: 100%;
     
 }
 
@@ -68,9 +68,32 @@
 .navigation-3{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  @media (min-width: 900px) and (max-width: 1000px){
+    .navigation-3{
+      margin-top: 18%;
+    }
   }
   
+  @media (min-width: 1000px) and (max-width: 1200px){
+    .navigation-3{
+      margin-top: 20%;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1500px){
+    .navigation-3{
+      margin-top: 23%;
+    }
+  }
+  @media (min-width: 1500px) and (max-width: 1564px){
+    .navigation-3{
+      margin-top: 24%;
+    }
+  }
   .navigation-3 p{
+  
     cursor: pointer;
     color:  hsl(231, 11%, 63%);
   }
@@ -85,7 +108,6 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 10px;
-    font-size: 10px;
+    padding: 10px 15px;
     cursor: pointer;
   }

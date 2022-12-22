@@ -5,6 +5,7 @@
 
 .content--1{
     width: 80%;
+    height: 100%;
     margin: 3% auto;
     transition: 0.5s;
     display: block;
@@ -37,10 +38,15 @@
   }
   
   .button{
-    width: 86%;
     margin: 12% auto 0 auto;
     justify-content: flex-end;
     display: flex;
+  }
+
+  @media (min-width: 1300px) and (max-width: 1564px) {
+    .button{
+      margin: 23% auto 0 auto;
+    }
   }
   
   .button button{
@@ -49,7 +55,7 @@
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 10px;
-    font-size: 10px;
+    border-radius: 5px;
+    padding: 10px 15px;
     cursor: pointer;
   }
